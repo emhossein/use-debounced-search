@@ -17,18 +17,18 @@ import React from "react";
 import useDebouncedSearch from "use-debounced-search";
 
 const SearchComponent = () => {
-  const { search, handleChange, debouncedSearch } = useDebouncedSearch(300);
-
-  const handleSearch = () => {
-    // Perform search with the debounced value
-    console.log(search);
-  };
+  const { search, searched, handleChange } = useDebouncedSearch(500);
 
   return (
     <div>
-      <input type="text" onChange={handleChange} />
-      <button onClick={debouncedSearch}>Search</button>
-      <button onClick={handleSearch}>Perform Search</button>
+      <input
+        type="text"
+        value={search}
+        onChange={handleChange}
+        placeholder="Search"
+      />
+      <p>Search value: {search}</p>
+      <p>Searched value: {searched}</p>
     </div>
   );
 };

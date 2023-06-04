@@ -1,11 +1,11 @@
 {
   "name": "use-debounced-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom React hook for debounced search functionality",
   "main": "dist/useDebouncedSearch.js",
   "scripts": {
     "test": "jest",
-    "build": "babel src --out-dir dist --copy-files"
+    "build": "tsc"
   },
   "keywords": [
     "react",
@@ -23,8 +23,10 @@
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.4",
     "@babel/preset-react": "^7.14.5",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
-    "jest": "^27.4.5"
+    "typescript": "^5.1.3"
   }
 }
