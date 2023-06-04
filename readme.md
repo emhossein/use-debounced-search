@@ -17,7 +17,8 @@ import React from "react";
 import useDebouncedSearch from "use-debounced-search";
 
 const SearchComponent = () => {
-  const { search, searched, handleChange } = useDebouncedSearch(500);
+  const { search, searched, handleChange, clearSearched } =
+    useDebouncedSearch(500);
 
   return (
     <div>
@@ -43,6 +44,7 @@ The `useDebouncedSearch` hook returns an object with the following properties:
 - search: The current search value.
 - handleChange: A function to handle the input change event.
 - debouncedSearch: A function to trigger the debounced search.
+- clearSearched: A function to clear the searched value
 
 ## Parameters
 

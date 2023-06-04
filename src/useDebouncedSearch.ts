@@ -30,7 +30,11 @@ const useDebouncedSearch = (delay = 300) => {
     setSearch(e.target.value);
   };
 
-  return { search, searched, handleChange };
+  const clearSearched = () => {
+    setSearched("");
+  };
+
+  return { search, searched, handleChange, clearSearched };
 };
 
 export default useDebouncedSearch;
