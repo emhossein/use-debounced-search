@@ -1,6 +1,6 @@
 {
   "name": "use-debounced-search",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A custom React hook for debounced search functionality",
   "main": "dist/useDebouncedSearch.js",
   "types": "types/index.d.ts",

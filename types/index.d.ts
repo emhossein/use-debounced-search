@@ -3,6 +3,7 @@ interface UseDebouncedSearchResult {
   searched: string;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   debouncedSearch: (text: string) => void;
+  clearSearch: () => void;
   clearSearched: () => void;
 }
 
